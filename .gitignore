@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/First_Gradle_Plugin_of_Android_Test_1/local.properties
+/First_Gradle_Plugin_of_Android_Test_1/.idea/caches
+/First_Gradle_Plugin_of_Android_Test_1/.idea/libraries
+/First_Gradle_Plugin_of_Android_Test_1/.idea/modules.xml
+/First_Gradle_Plugin_of_Android_Test_1/.idea/workspace.xml
+/First_Gradle_Plugin_of_Android_Test_1/.idea/navEditor.xml
+/First_Gradle_Plugin_of_Android_Test_1/.idea/assetWizardSettings.xml
+.DS_Store
+/First_Gradle_Plugin_of_Android_Test_1/build
+/First_Gradle_Plugin_of_Android_Test_1/captures
+.externalNativeBuild
+.cxx
+local.properties
+.idea/
