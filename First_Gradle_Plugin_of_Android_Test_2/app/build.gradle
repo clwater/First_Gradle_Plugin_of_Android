@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+apply plugin: 'com.clwater.plugin'
+
 android {
     namespace 'com.clwater.first_gradle_plugin_of_android_test_2'
     compileSdk 33

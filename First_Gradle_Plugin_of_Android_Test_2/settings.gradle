@@ -3,6 +3,11 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            allowInsecureProtocol(true)
+            url uri('./repo')
+        }
+
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +15,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            allowInsecureProtocol(true)
+            url uri('./repo')
+        }
     }
 }
 rootProject.name = "First_Gradle_Plugin_of_Android_Test_2"
 include ':app'
+include ':plugin'
