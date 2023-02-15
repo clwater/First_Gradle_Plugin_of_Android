@@ -3,57 +3,20 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-// 引用咱们 自己的
-apply plugin: DemoPlugin3
-apply plugin: DemoPlugin
-apply plugin: DemoPlugin5
-apply plugin: DemoPlugin2
-apply plugin: DemoPlugin4
-
 // 编写plugin类
 class DemoPlugin implements Plugin<Project>{
 
     @Override
     void apply(Project project) {
-        println "DemoPlugin1-----"
+        println "==============="
+        println "DemoPlugin"
+        println "==============="
     }
 }
 
-// 编写plugin类
-class DemoPlugin2 implements Plugin<Project>{
+// 使用自定义Plugin
+apply plugin: DemoPlugin
 
-    @Override
-    void apply(Project project) {
-        println "DemoPlugin2-----"
-    }
-}
-
-// 编写plugin类
-class DemoPlugin3 implements Plugin<Project>{
-
-    @Override
-    void apply(Project project) {
-        println "DemoPlugin3-----"
-    }
-}
-
-// 编写plugin类
-class DemoPlugin4 implements Plugin<Project>{
-
-    @Override
-    void apply(Project project) {
-        println "DemoPlugin4-----"
-    }
-}
-
-// 编写plugin类
-class DemoPlugin5 implements Plugin<Project>{
-
-    @Override
-    void apply(Project project) {
-        println "DemoPlugin5-----"
-    }
-}
 
 android {
     namespace 'com.clwater.first_gradle_plugin_of_android_test_1'
