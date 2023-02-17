@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.clwater.plugin",
+    "module": "Plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "Plugin-1.0.0.jar",
+          "url": "Plugin-1.0.0.jar",
+          "size": 5138,
+          "sha512": "4ecaf9147ff4b005239dbccfb02ce49de97e1647e19a6498bb78651bab78d6842163c1032a20ab515687328f85c0b024b64dcb57f689dc2dce96bc2110980862",
+          "sha256": "c73d59b747c8143c48e3b9412f8951adbf4be6f8c4031ba4a09d7603f8859343",
+          "sha1": "7a5b711ee16e9d04aaa7ad7861918d23fbc63d7d",
+          "md5": "16fa8739073d15eef7c9e743c9239863"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "Plugin-1.0.0.jar",
+          "url": "Plugin-1.0.0.jar",
+          "size": 5138,
+          "sha512": "4ecaf9147ff4b005239dbccfb02ce49de97e1647e19a6498bb78651bab78d6842163c1032a20ab515687328f85c0b024b64dcb57f689dc2dce96bc2110980862",
+          "sha256": "c73d59b747c8143c48e3b9412f8951adbf4be6f8c4031ba4a09d7603f8859343",
+          "sha1": "7a5b711ee16e9d04aaa7ad7861918d23fbc63d7d",
+          "md5": "16fa8739073d15eef7c9e743c9239863"
+        }
+      ]
+    }
+  ]
+}

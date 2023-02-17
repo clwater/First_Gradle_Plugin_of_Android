@@ -12,6 +12,33 @@ plugins {
 
     // Apply the Groovy plugin to add support for Groovy
     id 'groovy'
+
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        // 此处clwater可以随便写，但是后面的MavenPublication不能随便写
+        clwater(MavenPublication) {
+            // 插件的组ID
+            groupId = 'com.clwater.plugin'
+            // 插件的ID
+            artifactId = 'Plugin'
+            // 插件的版本
+            version = '1.0.0'
+            // 插件的发布类型
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            // 插件的发布仓库
+            name = 'repo'
+            // 插件的发布仓库地址
+            url = "../repo"
+        }
+    }
 }
 
 repositories {
