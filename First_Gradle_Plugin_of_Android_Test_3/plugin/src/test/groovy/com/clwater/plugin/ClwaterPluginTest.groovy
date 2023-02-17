@@ -10,7 +10,7 @@ import spock.lang.Specification
 /**
  * A simple unit test for the 'com.clwater.plugin.greeting' plugin.
  */
-class PluginPluginTest extends Specification {
+class ClwaterPluginTest extends Specification {
     def "plugin registers task"() {
         given:
         def project = ProjectBuilder.builder().build()

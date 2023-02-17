@@ -1,8 +1,13 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
+        //增加本地库房
+        maven {
+            allowInsecureProtocol(true)
+            url uri('./repo')
+        }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +15,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        //增加本地库房
+        maven {
+            allowInsecureProtocol(true)
+            url uri('./repo')
+        }
     }
 }
 rootProject.name = "First_Gradle_Plugin_of_Android_Test_4"

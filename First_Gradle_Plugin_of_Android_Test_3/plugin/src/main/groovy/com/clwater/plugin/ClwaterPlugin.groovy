@@ -9,8 +9,10 @@ import org.gradle.api.Plugin
 /**
  * A simple 'hello world' plugin.
  */
-class PluginPlugin implements Plugin<Project> {
+
+class ClwaterPlugin implements Plugin<Project> {
     void apply(Project project) {
+        println("Hello from plugin")
         // Register a task
         project.tasks.register("greeting") {
             doLast {
